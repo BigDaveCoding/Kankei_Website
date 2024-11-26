@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         gsap.to(".hero_text h1", {
             duration: 2,
-            text: "WE ARE KANKEI",
+            text: "WELCOME TO KANKEI",
             ease: "power2.inOut",
             // stagger: 0.5,
             oncComplete: function() {
