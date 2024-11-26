@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: 2,
             text: "WE ARE KANKEI",
             ease: "power2.inOut",
-            stagger: 0.5,
+            // stagger: 0.5,
             oncComplete: function() {
                 console.log("WE ARE KANKEI Text animation complete");
             }
         });
-        gsap.from(".hero_picture", {duration: 5, opacity: 0, delay: 2});
-        gsap.from(".hero_text p", {duration: 5, opacity: 0, delay: 2});
+        gsap.from(".hero_picture", {duration: 3, opacity: 0, delay: 1.9});
+        gsap.from(".hero_text p", {duration: 3, opacity: 0, delay: 1.8});
     }
 
     
