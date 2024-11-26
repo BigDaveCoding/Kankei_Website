@@ -36,13 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         gsap.from(".hero_picture", {duration: 5, opacity: 0});
-        gsap.to(".hero_text p", {
-            duration: 2,
-            text: "CLIMB THE LADDER OF SUCCESS WITH US",
-            ease: "power2.inOut",
-            delay: 1
-        }
-        )
+        gsap.from(".hero_text p", {duration: 5, opacity: 0, delay: 2});
     }
 
     
