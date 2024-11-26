@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("WE ARE KANKEI Text animation complete");
             }
         });
-        gsap.from(".hero_picture", {duration: 5, opacity: 0});
+        gsap.from(".hero_picture", {duration: 5, opacity: 0, delay: 2});
         gsap.from(".hero_text p", {duration: 5, opacity: 0, delay: 2});
     }
 
