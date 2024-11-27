@@ -70,6 +70,9 @@ body {
     justify-content: flex-end;
     align-items: center;
     /* border: 1px black solid; */
+    background-color: rgba(255, 255, 255, 0.658);
+    opacity: 1;
+    z-index: 2;
 }
 
 .nav_bar {
@@ -104,6 +107,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
     
 }
 
@@ -174,10 +178,23 @@ body {
     /* border: 1px red solid; */
 }
 
-#about_services_title {
+/* #about_services_title {
     font-size: 2rem;
     font-weight: 500;
     text-align: left;
+} */
+
+.main_services_title {
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    background-color: rgba(255, 255, 255, 0.658);
+    opacity: 1;
+    z-index: 1;
+    position: relative;
 }
 
 .services_title h3 {
@@ -265,3 +282,6 @@ body {
     background-color: rgba(31, 34, 81, 0.175);
 }
 
+.vh {
+    height: 200vh;
+}
