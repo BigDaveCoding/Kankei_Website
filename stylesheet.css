@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 .tinos-regular {
     font-family: "Tinos", serif;
@@ -21,9 +22,32 @@
     font-style: italic;
   }
 
+  /* // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 1000 */
+  
+.roboto-flex {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "XOPQ" 96,
+      "XTRA" 468,
+      "YOPQ" 79,
+      "YTAS" 750,
+      "YTDE" -203,
+      "YTFI" 738,
+      "YTLC" 514,
+      "YTUC" 712;
+}
+
 body {
     /* background-color: rgba(240, 248, 255, 0.484); */
-    font-family: "Tinos", serif;
+    /* font-family: "Tinos", serif; */
+    font-family: "Roboto Flex", sans-serif;
 }
 
 
@@ -107,7 +131,7 @@ body {
 } */
 
 .hero_text h1, .hero_text p {
-    font-family: "Tinos", serif;
+    /* font-family: "Tinos", serif; */
     word-spacing: 0.1rem;
     letter-spacing: 0.5rem;
      
@@ -157,18 +181,21 @@ body {
 }
 
 .services_title h3 {
+    font-family: "Roboto Flex", sans-serif;
     font-size: 6rem;
     font-weight: 500;
     text-align: left;
     margin-bottom: 1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.5rem;
 }
 
 .services_item {
     width: 100%;
     height: auto;
     display: flex;
-    /* border-bottom: 0.5px black solid;
-    border-top: 0.5px black solid; */
+    border-bottom: 0.1px black solid;
+    border-top: 0.1px black solid;
     opacity: 0.2;
     transform: translateY(50px);
     /* border: 2px blue solid; */
@@ -208,9 +235,8 @@ body {
 .services_text_two {
     flex-grow: 1;
     display: flex;
-    /* align-items: flex-end; */
     padding-left: 8rem;
-
+    letter-spacing: 0.2rem;
 }
 
 .services_image {
@@ -218,13 +244,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    /* border: 5px pink solid; */
 }
 
 #consulting_image {
     width: 500px;
     height: auto;
-    border-radius: 10px;    ;
+    border-radius: 10px;
 }
 
 .background_color_one {
