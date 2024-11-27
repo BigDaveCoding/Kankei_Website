@@ -41,19 +41,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
     gsap.utils.toArray('.services_item').forEach((item) => {
         gsap.fromTo(item, 
-            { opacity: 0, y: 50 }, 
+            { opacity: 0, y: 200 }, 
             { 
                 opacity: 1, 
                 y: 0, 
                 duration: 1, 
                 scrollTrigger: {
                     trigger: item,
-                    start: 'top 100%',
-                    end: 'top 50%',
+                    start: 'top 90%',
+                    end: 'top 40%',
                     scrub: true,
                     toggleActions: 'play none none reverse'
                 }
             }
         );
+
+        gsap.fromTo(item,
+            { opacity: 1 },
+            {
+                opacity: 0.1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 10%',
+                    end: 'top -20%',
+                    scrub: true,
+                    toggleActions: 'play none none reverse'
+                }
+            }
+        );
+        // gsap.to(item, {
+        //     opacity: 0,
+        //     scrollTrigger: {
+        //         trigger: item,
+        //         start: 'top 20%',
+        //         end: 'top 100%',
+        //         scrub: true,
+        //         toggleActions: 'play none none reverse'
+        //     }
+        // });
     }); 
 });
