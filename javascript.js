@@ -39,5 +39,21 @@ document.addEventListener('DOMContentLoaded', function() {
         gsap.from(".hero_text p", {duration: 3, opacity: 0, delay: 1.8});
     }
 
-    
+    gsap.utils.toArray('.services_item').forEach((item) => {
+        gsap.fromTo(item, 
+            { opacity: 0, y: 50 }, 
+            { 
+                opacity: 1, 
+                y: 0, 
+                duration: 1, 
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 100%',
+                    end: 'top 50%',
+                    scrub: true,
+                    toggleActions: 'play none none reverse'
+                }
+            }
+        );
+    }); 
 });

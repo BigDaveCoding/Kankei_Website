@@ -22,7 +22,7 @@
   }
 
 body {
-    background-color: rgba(240, 248, 255, 0.484);
+    /* background-color: rgba(240, 248, 255, 0.484); */
     font-family: "Tinos", serif;
 }
 
@@ -167,8 +167,10 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    border-bottom: 1px black solid;
-    border-top: 1px black solid;
+    /* border-bottom: 0.5px black solid;
+    border-top: 0.5px black solid; */
+    opacity: 0.2;
+    transform: translateY(50px);
     /* border: 2px blue solid; */
 }
 
@@ -195,11 +197,19 @@ body {
 .services_text span {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.services_text_one {
     text-align: left;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 
 .services_text_two {
-    padding-left: 6rem;
+    flex-grow: 1;
+    display: flex;
+    /* align-items: flex-end; */
+    padding-left: 8rem;
 
 }
 
@@ -214,8 +224,19 @@ body {
 #consulting_image {
     width: 500px;
     height: auto;
+    border-radius: 10px;    ;
 }
 
 .background_color_one {
-    background-color: sandybrown;
+    background-color: rgba(46, 116, 58, 0.100);
 }
+.background_color_two {
+    background-color: rgba(31, 81, 61, 0.125);
+}
+.background_color_three {
+    background-color: rgba(31, 67, 81, 0.150);
+}
+.background_color_four {
+    background-color: rgba(31, 34, 81, 0.175);
+}
+
