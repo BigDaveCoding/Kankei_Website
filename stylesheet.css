@@ -187,6 +187,8 @@ body {
 .main_services_title {
     width: 100%;
     font-size: 3rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.5rem;
     margin-top: 2rem;
     text-align: center;
     border-bottom: 1px black solid;
@@ -200,7 +202,7 @@ body {
 .services_title h3 {
     font-family: "Roboto Flex", sans-serif;
     font-size: 6rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 1rem;
     word-spacing: 0.1rem;
@@ -209,12 +211,13 @@ body {
 
 .services_item {
     width: 100%;
-    height: auto;
+    height: auto; /* adjusting height of the sections */
     display: flex;
     border-bottom: 0.1px black solid;
     border-top: 0.1px black solid;
-    opacity: 0.2;
-    transform: translateY(50px);
+    padding: 1rem 0;
+    /* opacity: 0.2;
+    transform: translateY(50px); */
     /* border: 2px blue solid; */
 }
 
@@ -238,22 +241,21 @@ body {
     width: 50%;
 }
 
-.services_text span {
-    font-size: 1.2rem;
-    font-weight: 500;
+.services_text span, .services_text p {
+    font-size: 1rem;
+    font-weight: 300;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.05rem;
 }
 
-.services_text_one {
+/* .services_text_one {
     text-align: left;
     word-spacing: 0.3rem;
     letter-spacing: 0.1rem;
-}
+} */
 
 .services_text_two {
-    flex-grow: 1;
-    display: flex;
     padding-left: 8rem;
-    letter-spacing: 0.2rem;
 }
 
 .services_image {
