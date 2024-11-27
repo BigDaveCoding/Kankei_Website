@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 scrollTrigger: {
                     trigger: item,
                     start: 'top 100%',
-                    end: 'top 60%',
+                    end: 'top 70%',
                     scrub: true,
                     toggleActions: 'play none none reverse'
                 }
@@ -74,11 +74,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     ScrollTrigger.create({
         trigger: ".main_services_title",
-        start: "top 91vh",
+        start: "top 90vh",
         endTrigger: '.last_service_section',
-        end: "bottom top-=820vh",
+        end: "bottom top+=200px",
         pin: true,
         pinSpacing: false,
         markers: false // Optional: for debugging
     });
+
+    gsap.fromTo(".main_services_title",
+        { opacity: 1 },
+        {
+            opacity: 0,
+            duration: 10,
+            scrollTrigger: {
+                trigger: ".last_service_section",
+                start: "top top", // Adjust the start point as needed
+                end: "bottom top+=150px", // Adjust the end point as needed
+                scrub: true,
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
 });
