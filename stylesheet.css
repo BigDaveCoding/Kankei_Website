@@ -160,12 +160,15 @@ body {
     font-size: 6rem;
     font-weight: 500;
     text-align: left;
+    margin-bottom: 1rem;
 }
 
 .services_item {
     width: 100%;
     height: auto;
     display: flex;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
     /* border: 2px blue solid; */
 }
 
@@ -173,6 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding: 0.5rem 2rem;
     /* border: 2px green solid; */
 }
 
@@ -181,6 +185,22 @@ body {
     display: flex;
     height: 100%;
     align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+.services_text p {
+    width: 50%;
+}
+
+.services_text span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.services_text_two {
+    padding-left: 6rem;
+
 }
 
 .services_image {
@@ -192,5 +212,10 @@ body {
 }
 
 #consulting_image {
-    width: 400px;
+    width: 500px;
+    height: auto;
+}
+
+.background_color_one {
+    background-color: sandybrown;
 }
