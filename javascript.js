@@ -96,4 +96,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     );
+
+    ScrollTrigger.create({
+        trigger: ".about_us_text_container", //might be worth using the section rather than this div. could use for end trigger aswell then.
+        start: "top top+=150px",
+        endTrigger: "#about_us_section",
+        end: "bottom top", //need to adjust this and add a endtrigger once i have the images in place.
+        pin: true,
+        pinSpacing: false,
+        marker: true
+    });
+
+    gsap.utils.toArray(".about_us_image").forEach((image, i) => {
+        gsap.to(image, {
+            y: (i % 2 === 0 ? -600 : 600), // Adjust the parallax effect
+            ease: "none",
+            scrollTrigger: {
+                trigger: image,
+                start: "top bottom", // Adjust as needed
+                end: "bottom top",
+                scrub: true
+            }
+        });
+    });
+
+    
 });
