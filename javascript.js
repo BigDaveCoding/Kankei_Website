@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollTrigger: {
                 trigger: ".last_service_section",
                 start: "top top", // Adjust the start point as needed
-                end: "bottom top+=150px", // Adjust the end point as needed
+                end: "bottom top+=200px", // Adjust the end point as needed
                 scrub: true,
                 toggleActions: 'play none none reverse'
             }
