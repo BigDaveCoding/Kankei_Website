@@ -97,13 +97,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* border: 1px red solid; */
 }
 
 .logo_container {
     /* border: 5px green dotted; */
     width: auto;
-    height: 100vh;
+    height: 100vh; /* changes to 10vh in script */
     display: flex;
     justify-content: center;
     align-items: center;
